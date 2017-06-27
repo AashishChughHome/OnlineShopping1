@@ -22,7 +22,7 @@
 
 <title>Online Shopping - ${title}</title>
 <script>
-	window.menu = '${title}';
+window.menu='${title}';
 </script>
 <!-- Bootstrap Core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
@@ -73,9 +73,7 @@
 	<!-- Bootstrap Core JavaScript -->
 	<script src="${js}/bootstrap.min.js"></script>
 </body>
-
-<script src="${js}/myapp.js">
-	
-</script>
+	<script src="${js}/myapp.js"></script>
+</body>
 
 </html>
