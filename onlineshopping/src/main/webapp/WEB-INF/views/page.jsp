@@ -66,12 +66,15 @@ window.menu='${title}';
 	<%@include file="./shared/footer.jsp"%>
 
 	<!-- /.container -->
-
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script src="${js}/myapp.js"></script>
 	<!-- jQuery -->
 	<script src="${js}/jquery.js"></script>
 
 	<!-- Bootstrap Core JavaScript -->
 	<script src="${js}/bootstrap.min.js"></script>
+	
+	
 </body>
 
 </html>
