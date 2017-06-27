@@ -6,7 +6,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Online Shopping</title>
 </head>
-<body>
-${greeting}
+<body>${greeting}
 </body>
 </html>
