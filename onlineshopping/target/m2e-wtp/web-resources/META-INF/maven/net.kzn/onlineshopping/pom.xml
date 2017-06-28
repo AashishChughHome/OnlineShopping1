@@ -14,9 +14,16 @@
 	</properties>
 
 	<dependencies>
+	
+	<!-- Linking backend project with the front end project -->
+	<dependency>
+	<groupId>net.kzn</groupId>
+	<artifactId>shoppingbackend</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	</dependency>
 		<!-- Java EE Api Dependency -->
 		<dependency>
-			<groupId>javax</groupId>
+			<groupId  >javax</groupId>
 			<artifactId>javaee-api</artifactId>
 			<version>${javaee.version}</version>
 			<scope>provided</scope>
