@@ -6,7 +6,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class PageController {
-	@RequestMapping(value = { "/", "/home", "/index" })
+	@RequestMapping(value = { "/.do", "/home.do", "/index.do" })
 	public ModelAndView index() {
 		ModelAndView mv = new ModelAndView("page");
 		mv.addObject("title", "Home");

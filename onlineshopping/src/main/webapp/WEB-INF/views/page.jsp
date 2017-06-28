@@ -22,7 +22,7 @@
 
 <title>Online Shopping - ${title}</title>
 <script>
-window.menu='${title}';
+	window.menu = '${title}';
 </script>
 <!-- Bootstrap Core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
@@ -40,41 +40,44 @@ window.menu='${title}';
 </head>
 
 <body>
+	<!-- wrapping the whole body into wrapper element by the div class="wrapper" -->
+	<div class="wrapper">
 
-	<!-- Navigation comes here  -->
-	<%@include file="./shared/navbar.jsp"%>
+		<!-- Navigation comes here  -->
+		<%@include file="./shared/navbar.jsp"%>
+		<!-- Page Content -->
+		<!-- Wrapping the page content into to another div element -->
+		<div class="content">
+			<!-- Loading the home content -->
+			<c:if test="${userClickHome == true}">
+				<%@include file="home.jsp"%>
+			</c:if>
 
+			<!-- Load if user click on About  -->
+			<c:if test="${userClickAbout == true}">
+				<%@include file="about.jsp"%>
+			</c:if>
 
-	<!-- Page Content -->
+			<!-- Load only if user click on Contact us  -->
+			<c:if test="${userClickContact == true}">
+				<%@include file="contact.jsp"%>
+			</c:if>
+		</div>
 
-	<!-- Loading the home content -->
-	<c:if test="${userClickHome == true}">
-		<%@include file="home.jsp"%>
-	</c:if>
+		<!-- Footer comes here -->
+		<%@include file="./shared/footer.jsp"%>
 
-	<!-- Load if user click on About  -->
-	<c:if test="${userClickAbout == true}">
-		<%@include file="about.jsp"%>
-	</c:if>
+		<!-- /.container -->
+		<script type="text/javascript"
+			src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+		<script src="${js}/myapp.js"></script>
+		<!-- jQuery -->
+		<script src="${js}/jquery.js"></script>
 
-	<!-- Load only if user click on Contact us  -->
-	<c:if test="${userClickContact == true}">
-		<%@include file="contact.jsp"%>
-	</c:if>
+		<!-- Bootstrap Core JavaScript -->
+		<script src="${js}/bootstrap.min.js"></script>
+	</div>
 
-	<!-- Footer comes here -->
-	<%@include file="./shared/footer.jsp"%>
-
-	<!-- /.container -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-<script src="${js}/myapp.js"></script>
-	<!-- jQuery -->
-	<script src="${js}/jquery.js"></script>
-
-	<!-- Bootstrap Core JavaScript -->
-	<script src="${js}/bootstrap.min.js"></script>
-	
-	
 </body>
 
 </html>
