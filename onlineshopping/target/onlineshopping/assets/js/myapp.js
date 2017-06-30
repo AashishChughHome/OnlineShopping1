@@ -7,9 +7,9 @@ $(function() {
 	case 'Contact Us':
 		$('#Contact').addClass('active');
 		break;
-	case 'default':
+	default:
 		$('#home').addClass('active');
 		break;
-	}
 
+	}
 });

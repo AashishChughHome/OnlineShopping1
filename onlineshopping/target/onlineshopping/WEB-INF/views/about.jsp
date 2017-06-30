@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row">
 		<h1>About us</h1>
-		</hr>
+		<hr>
 		<p>This is a About us page</p>
 	</div>
 </div>
